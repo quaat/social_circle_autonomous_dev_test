@@ -50,6 +50,8 @@ Commands run in `socialcircle/` and their results:
 | `sparring fix-config` | "nothing to fix" — `.gitignore` already ignored `.sparring/stages/`, `plans/`, `intake/` |
 | `sparring check-config` | exit 0; `stage artifacts git-ignored: yes`, `plan-run state git-ignored: yes`, `plan intake git-ignored: yes`; PROJECT.md present after bootstrap; user preferences file `~/.config/agent-sparring/config.toml` (absent → provider defaults) |
 | `sparring show-config --json` | `setup_problems: []` |
+| `sparring start-plan docs/plans/socialcircle-mvp.md --managed --json` (read-only preflight, no `--confirm`) | `status: ready`, `route: direct`, six implementation stages, `managed.target_branch: main`, `base_sha: f782b68…`, `permission_mode: acceptEdits`, `max_send_back_cycles: 5`; nothing written |
+| `sparring runs --json` | `{"runs": []}` — no managed run started yet |
 | `make check` | exit 2: `error: backend/ does not exist yet — it is created by Stage 1 …` (the honest pre-Stage-1 baseline, recorded in `.sparring/PROJECT.md`) |
 
 Bootstrap commit on `main`: `f782b68` ("Bootstrap SocialCircle: architecture, API

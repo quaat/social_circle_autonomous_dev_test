@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "sintef.agent-sparring-vscode",
+    "anthropic.claude-code",
+    "ms-python.python",
+    "angular.ng-template",
+    "ms-playwright.playwright"
+  ]
+}

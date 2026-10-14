@@ -1,0 +1,16 @@
+{
+  // Agent Sparring resolves `sparring` from your shell PATH. If the Overview
+  // reports it cannot find the engine, run "Agent Sparring: Choose sparring
+  // Executable…" (it stores agentSparring.executable in your user or
+  // workspace settings). We deliberately do not commit a machine path here.
+  "agentSparring.planContinuation": "automatic",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true,
+    "**/.mypy_cache": true,
+    "**/.ruff_cache": true
+  },
+  "python.defaultInterpreterPath": "${workspaceFolder}/backend/.venv/bin/python",
+  "[python]": { "editor.defaultFormatter": "charliermarsh.ruff" },
+  "editor.formatOnSave": false
+}

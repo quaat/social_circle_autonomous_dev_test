@@ -1,0 +1,43 @@
+# --- agent-sparring working artifacts ---------------------------------------
+# per-stage files, plan-run position and plan intake are runtime state the
+# engine rewrites during a run. .sparring/project.toml and .sparring/PROJECT.md
+# stay tracked. docs/plans/ (the reviewed development plan) is NOT ignored.
+.sparring/stages/
+.sparring/plans/
+.sparring/intake/
+
+# --- secrets / local environment --------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- python / uv -------------------------------------------------------------
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# --- node / angular ----------------------------------------------------------
+node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/test-results/
+frontend/playwright-report/
+frontend/blob-report/
+frontend/playwright/.cache/
+
+# --- editors / os ------------------------------------------------------------
+.idea/
+*.swp
+.DS_Store
+# .vscode/ is tracked on purpose (extension recommendations + workspace settings)
+
+# claude code local write cache
+.claude/.cc-writes/
+.claude/settings.local.json

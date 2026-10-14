@@ -52,6 +52,9 @@ Commands run in `socialcircle/` and their results:
 | `sparring show-config --json` | `setup_problems: []` |
 | `make check` | exit 2: `error: backend/ does not exist yet — it is created by Stage 1 …` (the honest pre-Stage-1 baseline, recorded in `.sparring/PROJECT.md`) |
 
+Bootstrap commit on `main`: `f782b68` ("Bootstrap SocialCircle: architecture, API
+contract, agent instructions, Agent Sparring config and staged plan").
+
 Model and effort: no preference saved; both roles run at the provider's own
 default. The engine records what each turn actually resolved to in the
 stage's `state.json` (`agents`) and `activity.jsonl` (`agents.resolved`).
